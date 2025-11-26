@@ -76,13 +76,24 @@ const Index = () => {
 
         <div className="relative h-full flex flex-col justify-between p-12">
           <div className="flex justify-between items-start">
-            <div className="relative">
-              <img 
-                src="https://cdn.poehali.dev/files/41a8ef77-965f-4dd0-9425-72e25c1ff3d7.png" 
-                alt="PRADA Logo"
-                className="w-72 h-auto object-contain"
+            <div className="relative w-72 h-24">
+              <div 
+                className="absolute inset-0"
                 style={{
-                  filter: 'brightness(0) saturate(100%) invert(59%) sepia(78%) saturate(447%) hue-rotate(5deg) brightness(94%) contrast(89%) drop-shadow(0 4px 20px rgba(0,0,0,0.8)) drop-shadow(0 0 50px rgba(212,175,55,0.8))'
+                  backgroundImage: `url(https://cdn.poehali.dev/files/41a8ef77-965f-4dd0-9425-72e25c1ff3d7.png)`,
+                  backgroundSize: 'contain',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                  WebkitMaskImage: `url(https://cdn.poehali.dev/files/41a8ef77-965f-4dd0-9425-72e25c1ff3d7.png)`,
+                  WebkitMaskSize: 'contain',
+                  WebkitMaskRepeat: 'no-repeat',
+                  WebkitMaskPosition: 'center',
+                  maskImage: `url(https://cdn.poehali.dev/files/41a8ef77-965f-4dd0-9425-72e25c1ff3d7.png)`,
+                  maskSize: 'contain',
+                  maskRepeat: 'no-repeat',
+                  maskPosition: 'center',
+                  background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #FFD700 50%, #DAA520 75%, #B8860B 100%)',
+                  filter: 'drop-shadow(0 4px 20px rgba(0,0,0,0.9)) drop-shadow(0 0 60px rgba(255,215,0,0.6)) drop-shadow(0 0 30px rgba(218,165,32,0.8))'
                 }}
               />
             </div>
