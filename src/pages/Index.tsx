@@ -80,9 +80,9 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/files/41a8ef77-965f-4dd0-9425-72e25c1ff3d7.png" 
                 alt="PRADA Logo"
-                className="w-72 h-auto object-contain drop-shadow-2xl"
+                className="w-72 h-auto object-contain"
                 style={{
-                  filter: 'drop-shadow(0 4px 20px rgba(0,0,0,0.8)) drop-shadow(0 0 40px rgba(212,175,55,0.3))'
+                  filter: 'brightness(0) saturate(100%) invert(59%) sepia(78%) saturate(447%) hue-rotate(5deg) brightness(94%) contrast(89%) drop-shadow(0 4px 20px rgba(0,0,0,0.8)) drop-shadow(0 0 50px rgba(212,175,55,0.8))'
                 }}
               />
             </div>
