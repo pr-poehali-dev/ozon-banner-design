@@ -77,13 +77,22 @@ const Index = () => {
         <div className="relative h-full flex flex-col justify-between p-12">
           <div className="flex justify-between items-start">
             <div className="relative w-72 flex items-center">
-              <div className="relative w-full h-24 flex items-center justify-start">
+              <div 
+                className="relative w-full h-24 flex items-center justify-start"
+                style={{
+                  background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #FFD700 50%, #DAA520 75%, #B8860B 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  filter: 'drop-shadow(0 4px 20px rgba(0,0,0,0.9)) drop-shadow(0 0 60px rgba(255,215,0,0.8)) drop-shadow(0 0 40px rgba(218,165,32,1))'
+                }}
+              >
                 <img 
                   src="https://cdn.poehali.dev/files/41a8ef77-965f-4dd0-9425-72e25c1ff3d7.png" 
                   alt="PRADA Logo"
                   className="w-full h-auto object-contain"
                   style={{
-                    filter: 'brightness(0) saturate(100%) invert(70%) sepia(70%) saturate(500%) hue-rotate(5deg) brightness(110%) contrast(95%) drop-shadow(0 4px 20px rgba(0,0,0,0.9)) drop-shadow(0 0 60px rgba(255,215,0,0.7)) drop-shadow(0 0 30px rgba(218,165,32,0.9))'
+                    filter: 'brightness(0) saturate(100%) invert(70%) sepia(70%) saturate(500%) hue-rotate(5deg) brightness(110%) contrast(95%)'
                   }}
                 />
               </div>
@@ -133,9 +142,13 @@ const Index = () => {
             >
               <span className="block">СКИДКИ НА ВЕСЬ</span>
               <span 
-                className="block text-[#D4AF37]"
+                className="block"
                 style={{
-                  textShadow: '4px 4px 0px rgba(0,0,0,0.9), 8px 8px 0px rgba(220,38,38,0.5), 0 0 50px rgba(212,175,55,0.6)'
+                  background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #FFD700 50%, #DAA520 75%, #B8860B 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  textShadow: '4px 4px 0px rgba(0,0,0,0.9), 8px 8px 0px rgba(220,38,38,0.5), 0 0 50px rgba(255,215,0,0.8)'
                 }}
               >
                 АССОРТИМЕНТ
