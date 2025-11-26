@@ -6,36 +6,38 @@ const Index = () => {
         style={{
           width: '1080px',
           height: '450px',
-          background: 'linear-gradient(135deg, #0A0A0A 0%, #1A0000 50%, #0A0A0A 100%)'
+          background: 'linear-gradient(135deg, #B8860B 0%, #D4AF37 25%, #F4E4C1 50%, #D4AF37 75%, #B8860B 100%)'
         }}
       >
         <div 
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 opacity-15"
           style={{
-            background: 'repeating-linear-gradient(90deg, transparent, transparent 2px, #DC2626 2px, #DC2626 4px)',
+            background: 'repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,0.1) 3px, rgba(0,0,0,0.1) 6px)',
             animation: 'slide 20s linear infinite'
           }}
         />
         
         <div 
-          className="absolute top-0 right-0 w-1/2 h-full opacity-10"
+          className="absolute inset-0"
           style={{
-            background: 'radial-gradient(ellipse at center, #D4AF37 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse at 30% 50%, rgba(255,255,255,0.3) 0%, transparent 50%), radial-gradient(ellipse at 70% 50%, rgba(184,134,11,0.4) 0%, transparent 50%)',
+            mixBlendMode: 'overlay'
           }}
         />
 
         <div className="relative h-full flex flex-col justify-between p-12">
           <div className="flex justify-between items-start">
             <div 
-              className="w-40 h-40 border-4 border-[#D4AF37] rounded-lg flex items-center justify-center"
+              className="w-44 h-44 rounded-lg flex items-center justify-center bg-white p-6"
               style={{
-                background: 'radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 70%)',
-                boxShadow: '0 0 30px rgba(212,175,55,0.3)'
+                boxShadow: '0 4px 20px rgba(0,0,0,0.3)'
               }}
             >
-              <span className="text-[#D4AF37] font-montserrat font-bold text-sm tracking-wider text-center">
-                МЕСТО ДЛЯ<br/>ЛОГОТИПА
-              </span>
+              <img 
+                src="https://cdn.poehali.dev/files/41a8ef77-965f-4dd0-9425-72e25c1ff3d7.png" 
+                alt="PRADA Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
 
             <div 
@@ -45,46 +47,48 @@ const Index = () => {
               }}
             >
               <div 
-                className="bg-[#DC2626] px-8 py-4 relative overflow-hidden"
+                className="bg-[#DC2626] px-16 py-8 relative overflow-hidden"
                 style={{
                   clipPath: 'polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%)',
-                  boxShadow: '0 0 40px rgba(220,38,38,0.6)'
+                  boxShadow: '0 0 60px rgba(220,38,38,0.8), inset 0 2px 20px rgba(0,0,0,0.3)'
                 }}
               >
                 <div 
-                  className="absolute inset-0 opacity-20"
+                  className="absolute inset-0 opacity-30"
                   style={{
-                    background: 'linear-gradient(45deg, transparent 30%, #D4AF37 50%, transparent 70%)',
+                    background: 'linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%)',
                     backgroundSize: '200% 200%',
                     animation: 'shimmer 3s ease-in-out infinite'
                   }}
                 />
                 <div className="relative">
-                  <span className="text-white font-oswald font-bold text-5xl tracking-wider block leading-none">
+                  <span className="text-white font-oswald font-bold text-8xl tracking-wider block leading-none">
                     до 17%
                   </span>
                 </div>
               </div>
               <div 
-                className="absolute -inset-2 bg-[#D4AF37] opacity-30 blur-xl -z-10"
+                className="absolute -inset-4 bg-[#DC2626] opacity-40 blur-2xl -z-10"
               />
             </div>
           </div>
 
           <div className="space-y-4">
             <h1 
-              className="font-oswald font-bold text-white leading-none"
+              className="font-oswald font-bold leading-none"
               style={{
                 fontSize: '5.5rem',
-                textShadow: '0 0 20px rgba(212,175,55,0.5), 4px 4px 0px #DC2626',
+                color: '#1A1A1A',
+                textShadow: '3px 3px 0px #DC2626, 6px 6px 0px rgba(220,38,38,0.4)',
                 letterSpacing: '0.05em'
               }}
             >
               <span className="block">СКИДКИ НА ВЕСЬ</span>
               <span 
-                className="block text-[#D4AF37]"
+                className="block"
                 style={{
-                  textShadow: '0 0 30px rgba(212,175,55,0.8), 3px 3px 0px rgba(220,38,38,0.8)'
+                  color: '#DC2626',
+                  textShadow: '3px 3px 0px #1A1A1A, 6px 6px 0px rgba(26,26,26,0.4)'
                 }}
               >
                 АССОРТИМЕНТ
@@ -92,8 +96,8 @@ const Index = () => {
             </h1>
             
             <div className="flex gap-4 items-center">
-              <div className="h-1 w-32 bg-gradient-to-r from-[#DC2626] to-[#D4AF37]" />
-              <span className="text-white font-montserrat font-semibold text-2xl tracking-wide uppercase">
+              <div className="h-1 w-32 bg-gradient-to-r from-[#DC2626] to-[#1A1A1A]" />
+              <span className="text-[#1A1A1A] font-montserrat font-bold text-2xl tracking-wide uppercase">
                 Автотовары премиум класса
               </span>
             </div>
@@ -103,8 +107,8 @@ const Index = () => {
         <div 
           className="absolute bottom-0 left-0 right-0 h-2"
           style={{
-            background: 'linear-gradient(90deg, #DC2626 0%, #D4AF37 50%, #DC2626 100%)',
-            boxShadow: '0 -2px 20px rgba(212,175,55,0.5)'
+            background: 'linear-gradient(90deg, #DC2626 0%, #1A1A1A 50%, #DC2626 100%)',
+            boxShadow: '0 -2px 20px rgba(220,38,38,0.5)'
           }}
         />
       </div>
