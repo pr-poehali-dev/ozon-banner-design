@@ -76,26 +76,38 @@ const Index = () => {
 
         <div className="relative h-full flex flex-col justify-between p-12">
           <div className="flex justify-between items-start">
-            <div className="relative w-72 h-24">
-              <div 
-                className="absolute inset-0"
-                style={{
-                  backgroundImage: `url(https://cdn.poehali.dev/files/41a8ef77-965f-4dd0-9425-72e25c1ff3d7.png)`,
-                  backgroundSize: 'contain',
-                  backgroundRepeat: 'no-repeat',
-                  backgroundPosition: 'center',
-                  WebkitMaskImage: `url(https://cdn.poehali.dev/files/41a8ef77-965f-4dd0-9425-72e25c1ff3d7.png)`,
-                  WebkitMaskSize: 'contain',
-                  WebkitMaskRepeat: 'no-repeat',
-                  WebkitMaskPosition: 'center',
-                  maskImage: `url(https://cdn.poehali.dev/files/41a8ef77-965f-4dd0-9425-72e25c1ff3d7.png)`,
-                  maskSize: 'contain',
-                  maskRepeat: 'no-repeat',
-                  maskPosition: 'center',
-                  background: 'linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #FFD700 50%, #DAA520 75%, #B8860B 100%)',
-                  filter: 'drop-shadow(0 4px 20px rgba(0,0,0,0.9)) drop-shadow(0 0 60px rgba(255,215,0,0.6)) drop-shadow(0 0 30px rgba(218,165,32,0.8))'
-                }}
-              />
+            <div className="relative">
+              <svg width="288" height="96" viewBox="0 0 288 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#FFD700" />
+                    <stop offset="25%" stopColor="#FFA500" />
+                    <stop offset="50%" stopColor="#FFD700" />
+                    <stop offset="75%" stopColor="#DAA520" />
+                    <stop offset="100%" stopColor="#B8860B" />
+                  </linearGradient>
+                  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+                    <feMerge>
+                      <feMergeNode in="coloredBlur"/>
+                      <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                  </filter>
+                </defs>
+                <text 
+                  x="144" 
+                  y="65" 
+                  fontSize="72" 
+                  fontFamily="'Times New Roman', serif" 
+                  fontWeight="bold" 
+                  textAnchor="middle" 
+                  fill="url(#goldGradient)"
+                  filter="url(#glow)"
+                  style={{ letterSpacing: '0.15em' }}
+                >
+                  PRADA
+                </text>
+              </svg>
             </div>
 
             <div className="flex flex-col items-end gap-3">
